@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main(){
+        int i,w,f,frame[10];
+        printf("enter window size:");
+        scanf("%d",&w);
+        printf("enter no.of frames:");
+        scanf("%d",&f);
+        printf("frames are transmitted using sliding window protocol\n");
+        printf("after sending %d frames sender will receive acknowledgement\n",w);
+        printf("enter frames");
+        for(i=1;i<=f;i++){
+        scanf("%d",&frame[i]);}
+        for(i=1;i<=f;i++){
+                if(i%w!=0)
+                        printf("frame %d\n",frame[i]);
+                else{
+                        printf("frame %d\n",frame[i]);
+                        printf("acknowledgment of above frames are received by sender\n");
+                    }}
+        if(f%w!=0)
+                printf("acknowledgment of above frames are received by sender\n");  }
